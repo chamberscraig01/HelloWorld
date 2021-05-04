@@ -3,14 +3,14 @@ pipeline{
     environment {
         NAME = 'helloworld'
         kubeConfigPath = "/home/config"
-        registry = "XXXX/helloworld"
-        registryCredential = 'docker-login'
+        registry = "chamberscraig/helloworld"
+        registryCredential = 'chamberscraig'
         dockerImage = ''
         kubectlPath = '/usr/local/bin/kubectl'
     }
     tools {
-        maven 'maven'
-        jdk 'jdk8'
+        maven 'Maven'
+        jdk 'JDK'
     }
     stages {
         stage('build app'){
