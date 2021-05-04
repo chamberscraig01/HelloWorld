@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: helloworld:latest
+          image: chamberscraig/HelloWorld:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8090
